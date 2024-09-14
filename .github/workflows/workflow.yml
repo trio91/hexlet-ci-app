@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - run: install build
-      - run: npmx eslint .
+      - run: npm install
+      - run: npx eslint .
       - name: run tests
         run: npm test
